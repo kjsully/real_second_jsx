@@ -1,6 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
+
 class App extends Component {
     render() {
         return (
@@ -8,5 +9,3 @@ class App extends Component {
         )
     }
 }
-
-export default App
