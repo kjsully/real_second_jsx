@@ -1,17 +1,23 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Index from './components/Index';
+import PropsComponent from './components/PropsComponent';
+
+const message = "kyle is freakin awesome"
+const animals = ["tiger ", "elephant ", "zebra"];
+const person = {
+  name: "kyle",
+  favFood: "teriyaki",
+  age: 28
+}
 
 function App() {
   return (
-    <div>
-      <h1>Hello Dojo!</h1>
-      <p>This I have to do:</p>
-      <ul>
-        <li>Learn React</li>
-        <li>Climb Mt. Rainier</li>
-        <li>Go grocery shopping ugh</li>
-        <li>Show up for algos</li>
-      </ul>
+    <div className="App">
+      <Index person={person}/>
+      <hr/>
+      <PropsComponent message={message} animals={animals}/>
     </div>
   );
 }
